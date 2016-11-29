@@ -182,6 +182,10 @@ p {
     padding: 0 4 * $default-spacing;
   }
 
+  .level--has-background {
+    background-size: cover;
+  }
+
   .level__inner {
     padding: 0 $default-spacing;
   }
@@ -199,3 +203,4 @@ p {
 
 //utils
 .util--text-align-c { text-align: center; }
+
