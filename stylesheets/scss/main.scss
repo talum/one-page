@@ -1,0 +1,201 @@
+//reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+//variables
+$default-spacing: 16px;
+$menu-height: 56px;
+
+$breakpoint-large: 1024px;
+$breakpoint-medium: 768px;
+$breakpoint-mobile: 480px;
+
+//colors
+$white: #FFFFFF;
+$navy: #385777;
+$teal: #62B0A2;
+$lime: #D1DB2F;
+$coral: #B02C6F;
+$charcoal: #1D1D1D;
+$grey-darker: #383838;
+$grey-dark: #474747;
+
+//typography
+.util--font-size--xl { font-size: 56px; }
+.util--font-size--l  { font-size: 24px; }
+.util--font-size--m  { font-size: 16px; }
+
+.heading {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.heading--level-1 {
+  @extend .util--font-size--xl;
+}
+
+.heading--level-2 {
+  @extend .util--font-size--l;
+  font-weight: 300;
+}
+
+.heading--level-3 {
+  @extend .util--font-size--m;
+  text-transform: uppercase;
+}
+
+.heading--section {
+   padding: 0 $default-spacing;
+}
+
+p {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  @extend .util--font-size--m;
+}
+
+//site layout
+.site-layout {
+  padding-top: $menu-height;
+}
+//levels
+.level {
+  padding: 0 6 * $default-spacing;
+}
+
+.level__inner {
+  padding: $default-spacing (2 * $default-spacing);
+}
+
+//colors
+.level--color-coral {
+  background-color: $coral;
+}
+
+.level--color-lime {
+  background-color: $lime;
+}
+
+// menu
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $menu-height;
+  background-color: $charcoal;
+  padding: 0 6 * $default-spacing;
+}
+
+.menu__inner {
+  padding: 0 2 * $default-spacing;
+}
+
+.menu__item {
+  display: inline-block;
+  padding: $default-spacing;
+  color: $white; 
+}
+
+.menu__item--logo {
+  float: left; 
+}
+
+.menu__item--icons {
+  float: right; 
+}
+
+.menu__item--link { 
+  @extend .heading;
+  @extend .heading--level-3;
+  float: left;
+  height: $menu-height;
+
+  &:hover {
+    background-color: $grey-dark;
+  }
+}
+
+//flex containers
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-row__item {
+  padding: $default-spacing;
+}
+
+.flex-row__item--thirds {
+  width:33%;
+}
+.flex-row__item--two-thirds {
+  width: 66%;
+}
+.flex-row__item--halves {
+  width:50%;
+}
+
+.flex-row__item--quarters {
+  width:25%;
+}
+
+.flex-container--gallery {
+  
+}
+
+//responsive behavior
+@media (max-width: $breakpoint-medium) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .flex-row {
+    flex-wrap: wrap;
+  }
+  .flex-row__item {
+    width: 100%;
+  }
+
+  //levels
+  .level {
+    padding: 0 4 * $default-spacing;
+  }
+
+  .level__inner {
+    padding: 0 $default-spacing;
+  }
+}
+
+//img
+.image-frame {
+  border-radius: 8px;
+}
+
+.image-frame--small {
+  height: 8 * $default-spacing;
+  width: 8 * $default-spacing;
+}
+
+//utils
+.util--text-align-c { text-align: center; }
