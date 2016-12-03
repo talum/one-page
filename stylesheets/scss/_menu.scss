@@ -11,8 +11,6 @@
 
 .menu__inner {
   padding: 0 2 * $default-spacing;
-
-
 }
 
 .menu__item {
@@ -37,5 +35,20 @@
 
   &:hover {
     background-color: $grey-dark;
+  }
+}
+
+@media (max-width: $breakpoint-medium) {
+  .menu__items {
+    position: absolute;
+    width: 200px;
+    left: -200px;
+  }
+
+  .menu__item {
+    position: relative;
+    display: block;
+    float: none;
+    width: 200px;  
   }
 }

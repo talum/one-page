@@ -93,6 +93,17 @@ p {
   .menu__item--link:hover {
     background-color: #474747; }
 
+@media (max-width: 768px) {
+  .menu__items {
+    position: absolute;
+    width: 200px;
+    left: -200px; }
+
+  .menu__item {
+    position: relative;
+    display: block;
+    float: none;
+    width: 200px; } }
 .flex-row {
   display: flex;
   justify-content: space-around;
