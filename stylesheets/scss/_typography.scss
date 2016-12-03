@@ -1,0 +1,32 @@
+//typography
+.util--font-size--xl { font-size: 56px; }
+.util--font-size--l  { font-size: 24px; }
+.util--font-size--m  { font-size: 16px; }
+
+.heading {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.heading--level-1 {
+  @extend .util--font-size--xl;
+}
+
+.heading--level-2 {
+  @extend .util--font-size--l;
+  font-weight: 300;
+}
+
+.heading--level-3 {
+  @extend .util--font-size--m;
+  text-transform: uppercase;
+}
+
+.heading--section {
+  padding: 0 $default-spacing;
+}
+
+p {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  @extend .util--font-size--m;
+}
+

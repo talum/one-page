@@ -1,0 +1,37 @@
+//flex containers
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-row__item {
+  padding: $default-spacing;
+}
+
+.flex-row__item--thirds {
+  width:33%;
+}
+.flex-row__item--two-thirds {
+  width: 66%;
+}
+.flex-row__item--halves {
+  width:50%;
+}
+
+.flex-row__item--quarters {
+  width:25%;
+}
+
+.flex-container--gallery {
+  
+}
+
+@media (max-width: $breakpoint-medium) {
+  .flex-row {
+    flex-wrap: wrap;
+  }
+  .flex-row__item {
+    width: 100%;
+  }
+}

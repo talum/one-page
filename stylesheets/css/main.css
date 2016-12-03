@@ -19,6 +19,27 @@ time, mark, audio, video {
   vertical-align: baseline;
   box-sizing: border-box; }
 
+.level {
+  padding: 0 96px; }
+
+.level__inner {
+  padding: 16px 32px; }
+
+.level--color-coral {
+  background-color: #B02C6F; }
+
+.level--color-lime {
+  background-color: #D1DB2F; }
+
+@media (max-width: 768px) {
+  .level {
+    padding: 0 64px; }
+
+  .level--has-background {
+    background-size: cover; }
+
+  .level__inner {
+    padding: 0 16px; } }
 .util--font-size--xl, .heading--level-1 {
   font-size: 56px; }
 
@@ -42,21 +63,6 @@ time, mark, audio, video {
 
 p {
   font-family: Georgia, Times, "Times New Roman", serif; }
-
-.site-layout {
-  padding-top: 56px; }
-
-.level {
-  padding: 0 96px; }
-
-.level__inner {
-  padding: 16px 32px; }
-
-.level--color-coral {
-  background-color: #B02C6F; }
-
-.level--color-lime {
-  background-color: #D1DB2F; }
 
 .menu {
   position: fixed;
@@ -108,26 +114,20 @@ p {
   width: 25%; }
 
 @media (max-width: 768px) {
-  .menu {
-    display: none; } }
-@media (max-width: 768px) {
   .flex-row {
     flex-wrap: wrap; }
 
   .flex-row__item {
-    width: 100%; }
-
-  .level {
-    padding: 0 64px; }
-
-  .level__inner {
-    padding: 0 16px; } }
+    width: 100%; } }
 .image-frame {
   border-radius: 8px; }
 
 .image-frame--small {
   height: 128px;
   width: 128px; }
+
+.site-layout {
+  padding-top: 56px; }
 
 .util--text-align-c {
   text-align: center; }

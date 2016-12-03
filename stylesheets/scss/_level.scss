@@ -1,0 +1,32 @@
+//levels
+.level {
+  padding: 0 6 * $default-spacing;
+}
+
+.level__inner {
+  padding: $default-spacing (2 * $default-spacing);
+}
+
+//colors
+.level--color-coral {
+  background-color: $coral;
+}
+
+.level--color-lime {
+  background-color: $lime;
+}
+
+@media (max-width: $breakpoint-medium) {
+  //levels
+  .level {
+    padding: 0 4 * $default-spacing;
+  }
+
+  .level--has-background {
+    background-size: cover;
+  }
+
+  .level__inner {
+    padding: 0 $default-spacing;
+  }
+}

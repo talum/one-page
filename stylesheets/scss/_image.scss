@@ -1,0 +1,9 @@
+//img
+.image-frame {
+  border-radius: 8px;
+}
+
+.image-frame--small {
+  height: 8 * $default-spacing;
+  width: 8 * $default-spacing;
+}
