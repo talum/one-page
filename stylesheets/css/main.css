@@ -39,12 +39,12 @@ time, mark, audio, video {
 
 @media (max-width: 768px) {
   .level {
-    padding: 0 64px; }
+    padding: 16px 64px; }
 
   .level__inner {
     padding: 0 16px; } }
-.util--font-size-xxl, .heading--level-1 {
-  font-size: 96px; }
+.util--font-size-xxl, .heading--level-1, .heading--hero {
+  font-size: 80px; }
 
 .util--font-size-xl, .heading--level-2 {
   font-size: 56px; }
@@ -67,6 +67,10 @@ time, mark, audio, video {
 .heading--section {
   padding: 0 16px; }
 
+.heading--hero {
+  padding: 32px;
+  border: 4px solid; }
+
 .heading--color-white {
   color: #FFFFFF; }
 
@@ -77,6 +81,26 @@ p {
 p + p {
   margin-top: 16px; }
 
+a {
+  color: #385777; }
+  a:hover {
+    color: #586E80; }
+
+@media (max-width: 768px) {
+  .util--font-size-xxl, .heading--level-1, .heading--hero {
+    font-size: 48px; }
+
+  .util--font-size-xl, .heading--level-2 {
+    font-size: 32px; }
+
+  .util--font-size-l, .heading--level-3, .menu__item--link {
+    font-size: 16px; }
+
+  .util--font-size-m, p {
+    font-size: 16px; }
+
+  .heading--hero {
+    padding: 4px; } }
 .menu {
   position: fixed;
   top: 0;
@@ -144,7 +168,7 @@ p + p {
   .flex-row__item {
     width: 100%; } }
 .image-frame {
-  border-radius: 8px; }
+  width: 100%; }
 
 .image-frame--small {
   height: 128px;
@@ -158,5 +182,9 @@ p + p {
 
 .module--billboard {
   padding: 160px; }
+
+@media (max-width: 768px) {
+  .module--billboard {
+    padding: 0 32px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 //levels
 .level {
-  padding: $default-spacing 6 * $default-spacing;
+  padding: $default-spacing (6 * $default-spacing);
 }
 
 .level__inner {
@@ -22,7 +22,7 @@
 
 @media (max-width: $breakpoint-medium) {
   .level {
-    padding: 0 4 * $default-spacing;
+    padding: $default-spacing (4 * $default-spacing);
   }
 
   .level__inner {

@@ -5,3 +5,9 @@
 .module--billboard {
   padding: 10 * $default-spacing;
 }
+
+@media (max-width: $breakpoint-medium) {
+  .module--billboard {
+    padding: 0 (2 * $default-spacing);
+  }
+}

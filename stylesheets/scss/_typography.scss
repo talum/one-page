@@ -1,8 +1,8 @@
 //typography
-.util--font-size-xxl { font-size: 96px; }
-.util--font-size-xl { font-size: 56px; }
-.util--font-size-l  { font-size: 24px; }
-.util--font-size-m  { font-size: 16px; }
+.util--font-size-xxl { font-size: 80px; }
+.util--font-size-xl  { font-size: 56px; }
+.util--font-size-l   { font-size: 24px; }
+.util--font-size-m   { font-size: 16px; }
 
 .heading {
   font-family: 'Roboto Condensed', sans-serif;
@@ -26,6 +26,12 @@
   padding: 0 $default-spacing;
 }
 
+.heading--hero {
+	@extend .heading--level-1;
+	padding: ($default-spacing * 2);
+	border:($default-spacing / 4) solid;
+}
+
 //colors
 .heading--color-white {
   color: $white;
@@ -41,3 +47,20 @@ p + p {
 	margin-top: $default-spacing;
 }
 
+a {
+	color: $navy;
+	&:hover {
+		color: $blue;
+	}
+}
+
+@media (max-width: $breakpoint-medium) {
+	.util--font-size-xxl { font-size: 48px; }
+	.util--font-size-xl  { font-size: 32px; }
+	.util--font-size-l   { font-size: 16px; }
+	.util--font-size-m   { font-size: 16px; }
+	
+	.heading--hero {
+		padding: ($default-spacing / 4);
+	}
+}
