@@ -115,7 +115,7 @@ a {
 
 .menu__item {
   display: inline-block;
-  padding: 16px;
+  padding: 14px 16px;
   color: #FFFFFF; }
 
 .menu__item--logo {
@@ -203,5 +203,17 @@ a {
 @media (max-width: 768px) {
   .module--billboard {
     padding: 0 32px; } }
+.svg-container {
+  padding: 0 4px;
+  display: inline; }
+
+.svg__icon {
+  height: 32px;
+  width: 32px; }
+
+.svg__icon--fill-white {
+  fill: #FFFFFF; }
+  .svg__icon--fill-white:hover {
+    fill: #1D1D1D; }
 
 /*# sourceMappingURL=main.css.map */

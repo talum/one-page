@@ -1,0 +1,16 @@
+.svg-container {
+  padding: 0 ($default-spacing / 4);
+  display: inline;
+}
+
+.svg__icon {
+  height: 32px;
+  width: 32px;
+}
+
+.svg__icon--fill-white {
+  fill: $white;
+  &:hover{
+    fill: $charcoal;
+  }
+}

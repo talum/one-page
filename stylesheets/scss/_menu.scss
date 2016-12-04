@@ -15,7 +15,7 @@
 
 .menu__item {
   display: inline-block;
-  padding: $default-spacing;
+  padding: ($default-spacing - 2) $default-spacing;
   color: $white; 
 }
 
