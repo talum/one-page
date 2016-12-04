@@ -7,12 +7,30 @@
 }
 
 .module--card {
-	.module_overlay {
+	.module_overlay{
 	}
 	.module__body {
+    height: (8 * $default-spacing);
+    background-color: $teal;
 	}
 	.module__footer {
 	}
+}
+
+.module--circle {
+  @extend .util--text-align-c;
+  margin: 0 auto;
+  border-radius: 9999px;
+  background-color: $coral;
+  height: (10 * $default-spacing);
+  width: (10 * $default-spacing);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .module__body {
+  }
+  .module__footer {
+  }
 }
 
 @media (max-width: $breakpoint-medium) {

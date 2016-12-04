@@ -19,7 +19,7 @@ time, mark, audio, video {
   vertical-align: baseline;
   box-sizing: border-box; }
 
-.util--text-align-c {
+.util--text-align-c, .module--circle {
   text-align: center; }
 
 .level {
@@ -146,6 +146,9 @@ a {
   justify-content: space-around;
   align-items: center; }
 
+.flex-row--top {
+  align-items: flex-start; }
+
 .flex-row__item {
   padding: 16px; }
 
@@ -182,6 +185,20 @@ a {
 
 .module--billboard {
   padding: 160px; }
+
+.module--card .module__body {
+  height: 128px;
+  background-color: #62B0A2; }
+
+.module--circle {
+  margin: 0 auto;
+  border-radius: 9999px;
+  background-color: #B02C6F;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 @media (max-width: 768px) {
   .module--billboard {

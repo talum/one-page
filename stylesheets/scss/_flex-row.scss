@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.flex-row--top {
+  align-items: flex-start;
+}
+
 .flex-row__item {
   padding: $default-spacing;
 }
