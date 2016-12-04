@@ -19,8 +19,11 @@ time, mark, audio, video {
   vertical-align: baseline;
   box-sizing: border-box; }
 
+.util--text-align-c {
+  text-align: center; }
+
 .level {
-  padding: 0 96px; }
+  padding: 16px 96px; }
 
 .level__inner {
   padding: 16px 32px; }
@@ -31,22 +34,25 @@ time, mark, audio, video {
 .level--color-lime {
   background-color: #D1DB2F; }
 
+.level--has-background {
+  background-size: cover; }
+
 @media (max-width: 768px) {
   .level {
     padding: 0 64px; }
 
-  .level--has-background {
-    background-size: cover; }
-
   .level__inner {
     padding: 0 16px; } }
-.util--font-size--xl, .heading--level-1 {
+.util--font-size-xxl, .heading--level-1 {
+  font-size: 96px; }
+
+.util--font-size-xl, .heading--level-2 {
   font-size: 56px; }
 
-.util--font-size--l, .heading--level-2 {
+.util--font-size-l, .heading--level-3, .menu__item--link {
   font-size: 24px; }
 
-.util--font-size--m, .heading--level-3, .menu__item--link, p {
+.util--font-size-m, p {
   font-size: 16px; }
 
 .heading, .menu__item--link {
@@ -61,8 +67,15 @@ time, mark, audio, video {
 .heading--section {
   padding: 0 16px; }
 
+.heading--color-white {
+  color: #FFFFFF; }
+
 p {
-  font-family: Georgia, Times, "Times New Roman", serif; }
+  font-family: Georgia, Times, "Times New Roman", serif;
+  line-height: 1.5; }
+
+p + p {
+  margin-top: 16px; }
 
 .menu {
   position: fixed;
@@ -140,7 +153,10 @@ p {
 .site-layout {
   padding-top: 56px; }
 
-.util--text-align-c {
-  text-align: center; }
+.module {
+  padding: 16px; }
+
+.module--billboard {
+  padding: 160px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,23 +1,24 @@
 //typography
-.util--font-size--xl { font-size: 56px; }
-.util--font-size--l  { font-size: 24px; }
-.util--font-size--m  { font-size: 16px; }
+.util--font-size-xxl { font-size: 96px; }
+.util--font-size-xl { font-size: 56px; }
+.util--font-size-l  { font-size: 24px; }
+.util--font-size-m  { font-size: 16px; }
 
 .heading {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 .heading--level-1 {
-  @extend .util--font-size--xl;
+  @extend .util--font-size-xxl;
 }
 
 .heading--level-2 {
-  @extend .util--font-size--l;
+  @extend .util--font-size-xl;
   font-weight: 300;
 }
 
 .heading--level-3 {
-  @extend .util--font-size--m;
+  @extend .util--font-size-l;
   text-transform: uppercase;
 }
 
@@ -25,8 +26,18 @@
   padding: 0 $default-spacing;
 }
 
+//colors
+.heading--color-white {
+  color: $white;
+}
+
 p {
   font-family: Georgia, Times, "Times New Roman", serif;
-  @extend .util--font-size--m;
+  @extend .util--font-size-m;
+	line-height: 1.5;
+}
+
+p + p {
+	margin-top: $default-spacing;
 }
 
