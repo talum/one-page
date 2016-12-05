@@ -19,7 +19,7 @@ time, mark, audio, video {
   vertical-align: baseline;
   box-sizing: border-box; }
 
-.util--text-align-c, .module--circle {
+.util--text-align-c, .menu__logo .menu__logo__text, .module--circle {
   text-align: center; }
 
 .level {
@@ -49,19 +49,19 @@ time, mark, audio, video {
 .util--font-size-xl, .heading--level-2 {
   font-size: 56px; }
 
-.util--font-size-l, .heading--level-3, .menu__item--link {
+.util--font-size-l, .heading--level-3, .menu__logo .menu__logo__text, .menu__item--link {
   font-size: 24px; }
 
 .util--font-size-m, p {
   font-size: 16px; }
 
-.heading, .menu__item--link {
+.heading, .menu__logo .menu__logo__text, .menu__item--link {
   font-family: 'Roboto Condensed', sans-serif; }
 
 .heading--level-2 {
   font-weight: 300; }
 
-.heading--level-3, .menu__item--link {
+.heading--level-3, .menu__logo .menu__logo__text, .menu__item--link {
   text-transform: uppercase; }
 
 .heading--section {
@@ -93,7 +93,7 @@ a {
   .util--font-size-xl, .heading--level-2 {
     font-size: 32px; }
 
-  .util--font-size-l, .heading--level-3, .menu__item--link {
+  .util--font-size-l, .heading--level-3, .menu__logo .menu__logo__text, .menu__item--link {
     font-size: 16px; }
 
   .util--font-size-m, p {
@@ -118,8 +118,18 @@ a {
   padding: 14px 16px;
   color: #FFFFFF; }
 
-.menu__item--logo {
+.menu__logo {
+  display: inline-block;
+  padding: 14px 16px;
+  color: #FFFFFF;
   float: left; }
+  .menu__logo .menu__logo__text {
+    border: 2px solid #FFFFFF;
+    padding: 0 12px; }
+  .menu__logo:hover {
+    color: #B02C6F; }
+    .menu__logo:hover .menu__logo__text {
+      border: 2px solid #B02C6F; }
 
 .menu__item--icons {
   float: right; }
@@ -131,6 +141,10 @@ a {
     background-color: #474747; }
 
 @media (max-width: 768px) {
+  .menu__logo .menu__logo__text {
+    position: absolute;
+    left: 16px; }
+
   .menu__items {
     position: absolute;
     width: 200px;
