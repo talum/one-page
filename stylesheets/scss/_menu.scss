@@ -32,9 +32,9 @@
     padding: 0 ($default-spacing - 4);
   }
   &:hover {
-    color: $coral;
+    color: $yellow;
     .menu__logo__text {
-      border: 2px solid $coral;
+      border: 2px solid $yellow;
     }
   }
 }

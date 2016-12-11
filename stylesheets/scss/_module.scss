@@ -6,12 +6,28 @@
   padding: 10 * $default-spacing;
 }
 
+.module--callout {
+	.module__head {
+	}
+	.module__body {
+		padding: $default-spacing;
+		p:first-of-type {
+			&::first-line {
+				@extend .util--font-size-l;
+			}
+		}
+	}
+	.module__footer {
+	}
+}
+
 .module--card {
 	.module_overlay{
 	}
 	.module__body {
 	}
 	.module__footer {
+		background-color: $white;
 		padding: $default-spacing;
 		-webkit-box-shadow: 0 10px 6px -6px #777;
 	  -moz-box-shadow: 0 10px 6px -6px #777;
@@ -23,7 +39,7 @@
   @extend .util--text-align-c;
   margin: 0 auto;
   border-radius: 9999px;
-  background-color: $coral;
+  background-color: $yellow;
   height: (10 * $default-spacing);
   width: (10 * $default-spacing);
   display: flex;

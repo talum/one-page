@@ -7,13 +7,17 @@
   padding: $default-spacing (2 * $default-spacing);
 }
 
-//colors
-.level--color-coral {
-  background-color: $coral;
+.level__inner--padding--small {
+  padding: 0 $default-spacing;
 }
 
-.level--color-lime {
-  background-color: $lime;
+//colors
+.level--color-yellow {
+  background-color: $yellow;
+}
+
+.level--color-grey-light {
+  background-color: $grey-light;
 }
 
 .level--has-background {

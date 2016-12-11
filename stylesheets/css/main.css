@@ -28,11 +28,14 @@ time, mark, audio, video {
 .level__inner {
   padding: 16px 32px; }
 
-.level--color-coral {
-  background-color: #B02C6F; }
+.level__inner--padding--small {
+  padding: 0 16px; }
 
-.level--color-lime {
-  background-color: #D1DB2F; }
+.level--color-yellow {
+  background-color: #f4e0ab; }
+
+.level--color-grey-light {
+  background-color: #EEEEEE; }
 
 .level--has-background {
   background-size: cover; }
@@ -49,7 +52,7 @@ time, mark, audio, video {
 .util--font-size-xl, .heading--level-2 {
   font-size: 56px; }
 
-.util--font-size-l, .heading--level-3, .menu__logo .menu__logo__text, .menu__item--link {
+.util--font-size-l, .heading--level-3, .menu__logo .menu__logo__text, .menu__item--link, .module--callout .module__body p:first-of-type::first-line {
   font-size: 24px; }
 
 .util--font-size-m, p {
@@ -82,6 +85,7 @@ p + p {
   margin-top: 16px; }
 
 a {
+  text-decoration: none;
   color: #385777; }
   a:hover {
     color: #586E80; }
@@ -93,7 +97,7 @@ a {
   .util--font-size-xl, .heading--level-2 {
     font-size: 32px; }
 
-  .util--font-size-l, .heading--level-3, .menu__logo .menu__logo__text, .menu__item--link {
+  .util--font-size-l, .heading--level-3, .menu__logo .menu__logo__text, .menu__item--link, .module--callout .module__body p:first-of-type::first-line {
     font-size: 16px; }
 
   .util--font-size-m, p {
@@ -127,9 +131,9 @@ a {
     border: 2px solid #FFFFFF;
     padding: 0 12px; }
   .menu__logo:hover {
-    color: #B02C6F; }
+    color: #f4e0ab; }
     .menu__logo:hover .menu__logo__text {
-      border: 2px solid #B02C6F; }
+      border: 2px solid #f4e0ab; }
 
 .menu__item--icons {
   float: right; }
@@ -162,9 +166,6 @@ a {
 
 .flex-row--top {
   align-items: flex-start; }
-
-.flex-row__item {
-  padding: 16px; }
 
 .flex-row__item--thirds {
   width: 33%; }
@@ -202,7 +203,11 @@ a {
 .module--billboard {
   padding: 160px; }
 
+.module--callout .module__body {
+  padding: 16px; }
+
 .module--card .module__footer {
+  background-color: #FFFFFF;
   padding: 16px;
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
@@ -211,7 +216,7 @@ a {
 .module--circle {
   margin: 0 auto;
   border-radius: 9999px;
-  background-color: #B02C6F;
+  background-color: #f4e0ab;
   height: 160px;
   width: 160px;
   display: flex;
@@ -232,6 +237,6 @@ a {
 .svg__icon--fill-white {
   fill: #FFFFFF; }
   .svg__icon--fill-white:hover {
-    fill: #1D1D1D; }
+    fill: #f4e0ab; }
 
 /*# sourceMappingURL=main.css.map */
