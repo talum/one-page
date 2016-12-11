@@ -186,6 +186,8 @@ a {
     width: 100%; } }
 .image-frame {
   width: 100%; }
+  .image-frame .image-frame__image {
+    width: 100%; }
 
 .image-frame--small {
   height: 128px;
@@ -200,9 +202,11 @@ a {
 .module--billboard {
   padding: 160px; }
 
-.module--card .module__body {
-  height: 128px;
-  background-color: #62B0A2; }
+.module--card .module__footer {
+  padding: 16px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777; }
 
 .module--circle {
   margin: 0 auto;

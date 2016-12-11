@@ -10,10 +10,12 @@
 	.module_overlay{
 	}
 	.module__body {
-    height: (8 * $default-spacing);
-    background-color: $teal;
 	}
 	.module__footer {
+		padding: $default-spacing;
+		-webkit-box-shadow: 0 10px 6px -6px #777;
+	  -moz-box-shadow: 0 10px 6px -6px #777;
+	   box-shadow: 0 10px 6px -6px #777;
 	}
 }
 
