@@ -7,6 +7,7 @@
   height: $menu-height;
   background-color: $charcoal;
   padding: 0 6 * $default-spacing;
+  z-index: 9999;
 }
 
 .menu__inner {

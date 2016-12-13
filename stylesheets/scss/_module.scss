@@ -22,12 +22,21 @@
 }
 
 .module--card {
-	.module_overlay{
-	}
 	.module__body {
+    @include purple-gradient;
+    .image-frame__image {
+      opacity: 1;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
 	}
 	.module__footer {
 		background-color: $white;
+    position: relative;
+    top: ($default-spacing / -2);
 		padding: $default-spacing;
 		-webkit-box-shadow: 0 10px 6px -6px #777;
 	  -moz-box-shadow: 0 10px 6px -6px #777;
@@ -37,14 +46,17 @@
 
 .module--circle {
   @extend .util--text-align-c;
+  @include purple-gradient;
   margin: 0 auto;
   border-radius: 9999px;
-  background-color: $yellow;
   height: (10 * $default-spacing);
   width: (10 * $default-spacing);
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover {
+    opacity: 0.5;
+  }
   .module__body {
   }
   .module__footer {

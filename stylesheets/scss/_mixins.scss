@@ -1,0 +1,5 @@
+@mixin purple-gradient {
+  background: #4568DC; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4568DC , #B06AB3);
+  background: linear-gradient(to left, #4568DC , #B06AB3);
+}
