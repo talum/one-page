@@ -12,8 +12,8 @@
 }
 
 //colors
-.level--color-yellow {
-  background-color: $yellow;
+.level--color-grey {
+  background-color: $grey;
 }
 
 .level--color-grey-light {
@@ -26,10 +26,10 @@
 
 @media (max-width: $breakpoint-medium) {
   .level {
-    padding: $default-spacing (4 * $default-spacing);
+    padding: (2 * $default-spacing) (4 * $default-spacing);
   }
 
   .level__inner {
-    padding: 0 $default-spacing;
+    padding: $default-spacing $default-spacing;
   }
 }

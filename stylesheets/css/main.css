@@ -31,8 +31,8 @@ time, mark, audio, video {
 .level__inner--padding--small {
   padding: 0 16px; }
 
-.level--color-yellow {
-  background-color: #f4e0ab; }
+.level--color-grey {
+  background-color: #D3D3D3; }
 
 .level--color-grey-light {
   background-color: #EEEEEE; }
@@ -42,10 +42,10 @@ time, mark, audio, video {
 
 @media (max-width: 768px) {
   .level {
-    padding: 16px 64px; }
+    padding: 32px 64px; }
 
   .level__inner {
-    padding: 0 16px; } }
+    padding: 16px 16px; } }
 .util--font-size-xxl, .heading--level-1, .heading--hero {
   font-size: 80px; }
 
@@ -86,9 +86,9 @@ p + p {
 
 a {
   text-decoration: none;
-  color: #385777; }
+  color: #B06AB3; }
   a:hover {
-    color: #586E80; }
+    color: #4568DC; }
 
 @media (max-width: 768px) {
   .util--font-size-xxl, .heading--level-1, .heading--hero {
@@ -132,9 +132,9 @@ a {
     border: 2px solid #FFFFFF;
     padding: 0 12px; }
   .menu__logo:hover {
-    color: #f4e0ab; }
+    color: #4568DC; }
     .menu__logo:hover .menu__logo__text {
-      border: 2px solid #f4e0ab; }
+      border: 2px solid #B06AB3; }
 
 .menu__item--icons {
   float: right; }
@@ -256,6 +256,6 @@ a {
 .svg__icon--fill-white {
   fill: #FFFFFF; }
   .svg__icon--fill-white:hover {
-    fill: #f4e0ab; }
+    fill: #B06AB3; }
 
 /*# sourceMappingURL=main.css.map */

@@ -33,9 +33,9 @@
     padding: 0 ($default-spacing - 4);
   }
   &:hover {
-    color: $yellow;
+    color: $violet;
     .menu__logo__text {
-      border: 2px solid $yellow;
+      border: 2px solid $purple;
     }
   }
 }
