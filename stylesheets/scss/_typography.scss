@@ -48,6 +48,7 @@ p + p {
 }
 
 a {
+  @include ease-transition;
   text-decoration: none;
 	color: $purple;
 	&:hover {
