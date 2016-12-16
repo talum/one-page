@@ -170,6 +170,10 @@ a {
 .flex-row--top {
   align-items: flex-start; }
 
+.flex-row__item {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
 .flex-row__item--thirds {
   width: 33%; }
 

@@ -10,6 +10,7 @@
 }
 
 .flex-row__item {
+  @include ease-transition;
 }
 
 .flex-row__item--thirds {
