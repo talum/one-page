@@ -66,7 +66,9 @@
   .menu__items {
     position: absolute;
     width: 200px;
+    top: $menu-height;
     left: -200px;
+    background-color: $charcoal; 
   }
 
   .menu__item {

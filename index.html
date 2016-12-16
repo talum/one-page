@@ -5,6 +5,7 @@
       <link rel="stylesheet" type="text/css" href="stylesheets/css/main.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="javascripts/app.js"></script>
       <svg style="display: none;" xmlns='http://www.w3.org/2000/svg'>
         <defs>
           <!-- Facebook -->
@@ -41,25 +42,25 @@
 
 
   <body>
-    <div class="site-layout">
+    <div id="home" class="site-layout">
         <div class="menu">
           <div class="menu__inner">
             <div class="menu__logo">
               <div id="menu-toggle" class="menu__logo__text util--hide-medium-down">TL</div>
-              <div class="menu__logo__text util--show-medium">TL</div>
+              <div id="home_link" class="menu__logo__text util--show-medium">TL</div>
             </div>
             <div class="menu__items">
-              <div class="menu__item menu__item--link">
+              <div id="about_link" class="menu__item menu__item--link">
                 About
               </div>
-              <div class="menu__item menu__item--link">
+              <div id="apps_link" class="menu__item menu__item--link">
                 Apps
               </div>
-              <div class="menu__item menu__item--link">
+              <div id="writing_link" class="menu__item menu__item--link">
                 Writing
               </div>
               <div class="menu__item menu__item--link">
-                Blog
+                <a href="http://www.tracylum.com/blog" target="_blank">Blog</a>
               </div>
               <div class="menu__item menu__item--icons">
                 <div class="svg-container">
@@ -100,7 +101,7 @@
           </div>
         </div>
       </div>
-      <div class="level">
+      <div id="about" class="level">
         <div class="level__inner">
           <div class="heading heading--level-2">
             About
@@ -131,7 +132,7 @@
         </div>
       </div>
 
-      <div class="level level--color-grey-light">
+      <div id="apps" class="level level--color-grey-light">
         <div class="level__inner">
           <div class="heading heading--level-2">
             Apps
@@ -211,7 +212,7 @@
         </div>
       </div>
       
-      <div class="level">
+      <div id="writing" class="level">
         <div class="level__inner">
           <div class="heading heading--level-2">
             Writing

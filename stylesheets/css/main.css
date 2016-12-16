@@ -97,11 +97,14 @@ p + p {
   margin-top: 16px; }
 
 a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+p a {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  text-decoration: none;
   color: #B06AB3; }
-  a:hover {
+  p a:hover {
     color: #4568DC; }
 
 @media (max-width: 768px) {
@@ -167,7 +170,9 @@ a {
   .menu__items {
     position: absolute;
     width: 200px;
-    left: -200px; }
+    top: 56px;
+    left: -200px;
+    background-color: #1D1D1D; }
 
   .menu__item {
     position: relative;

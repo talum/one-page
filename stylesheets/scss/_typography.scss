@@ -48,8 +48,12 @@ p + p {
 }
 
 a {
-  @include ease-transition;
   text-decoration: none;
+  color: $white
+}
+
+p a {
+  @include ease-transition;
 	color: $purple;
 	&:hover {
 		color: $violet;
