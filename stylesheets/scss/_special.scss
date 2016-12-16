@@ -1,2 +1,15 @@
 //utils
 .util--text-align-c { text-align: center; }
+.util--hide-medium-down {
+  display: none;
+  @media (max-width: $breakpoint-medium) {
+    display: block;
+  }
+}
+
+.util--show-medium {
+  display: none;
+  @media (min-width: $breakpoint-medium) {
+    display: block;
+  }
+}

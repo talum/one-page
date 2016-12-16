@@ -22,6 +22,18 @@ time, mark, audio, video {
 .util--text-align-c, .menu__logo .menu__logo__text, .module--circle {
   text-align: center; }
 
+.util--hide-medium-down {
+  display: none; }
+  @media (max-width: 768px) {
+    .util--hide-medium-down {
+      display: block; } }
+
+.util--show-medium {
+  display: none; }
+  @media (min-width: 768px) {
+    .util--show-medium {
+      display: block; } }
+
 .level {
   padding: 16px 96px; }
 
