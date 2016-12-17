@@ -36,6 +36,6 @@
 
 @media (max-width: $breakpoint-mobile) {
   .level {
-    padding: $default-spacing (2 * $default-spacing);
+    padding: $default-spacing $default-spacing;
   }
 }

@@ -60,7 +60,7 @@ time, mark, audio, video {
     padding: 16px 16px; } }
 @media (max-width: 480px) {
   .level {
-    padding: 16px 32px; } }
+    padding: 16px 16px; } }
 .util--font-size-xxl, .heading--level-1, .heading--hero {
   font-size: 80px; }
 
