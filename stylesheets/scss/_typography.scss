@@ -3,6 +3,7 @@
 .util--font-size-xl  { font-size: 56px; }
 .util--font-size-l   { font-size: 24px; }
 .util--font-size-m   { font-size: 16px; }
+.util--break-word    { word-break: break-word; }
 
 .heading {
   font-family: 'Roboto Condensed', sans-serif;
@@ -40,6 +41,7 @@
 p {
   font-family: Georgia, Times, "Times New Roman", serif;
   @extend .util--font-size-m;
+  @extend .util--break-word;
 	line-height: 1.5;
 }
 

@@ -58,6 +58,9 @@ time, mark, audio, video {
 
   .level__inner {
     padding: 16px 16px; } }
+@media (max-width: 480px) {
+  .level {
+    padding: 16px 32px; } }
 .util--font-size-xxl, .heading--level-1, .heading--hero {
   font-size: 80px; }
 
@@ -69,6 +72,9 @@ time, mark, audio, video {
 
 .util--font-size-m, p {
   font-size: 16px; }
+
+.util--break-word, p {
+  word-break: break-word; }
 
 .heading, .menu__logo .menu__logo__text, .menu__item--link {
   font-family: 'Roboto Condensed', sans-serif; }
