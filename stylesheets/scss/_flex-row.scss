@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .flex-row--top {
@@ -32,9 +33,6 @@
 }
 
 @media (max-width: $breakpoint-medium) {
-  .flex-row {
-    flex-wrap: wrap;
-  }
   .flex-row__item {
     width: 100%;
   }

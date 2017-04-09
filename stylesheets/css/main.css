@@ -96,7 +96,7 @@ time, mark, audio, video {
   color: #FFFFFF; }
 
 p {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.5; }
 
 p + p {
@@ -188,7 +188,8 @@ p a {
 .flex-row {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .flex-row--top {
   align-items: flex-start; }
@@ -210,9 +211,6 @@ p a {
   width: 25%; }
 
 @media (max-width: 768px) {
-  .flex-row {
-    flex-wrap: wrap; }
-
   .flex-row__item {
     width: 100%; } }
 .image-frame {
@@ -276,7 +274,7 @@ p a {
   background: linear-gradient(to left, #4568DC, #B06AB3);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  margin: 0 auto;
+  margin: 16px auto;
   border-radius: 9999px;
   height: 160px;
   width: 160px;

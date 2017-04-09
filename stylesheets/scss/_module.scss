@@ -50,7 +50,7 @@
   @extend .util--text-align-c;
   @include purple-gradient;
   @include ease-transition;
-  margin: 0 auto;
+  margin: 16px auto;
   border-radius: 9999px;
   height: (10 * $default-spacing);
   width: (10 * $default-spacing);
