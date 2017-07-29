@@ -1,4 +1,6 @@
-# one-page
+# See [v2](https://github.com/talum/one-page-v2)
+
+# one-page [deprecated]
 
 - Single-page portfolio that links out to my wordpress blog
 - uses jquery for JS
